@@ -1,0 +1,39 @@
+Reqs
+- Register User and Restaurant
+- User gets a list of restaurants nearby
+- User can place the order and the inventory should be updated.
+
+Reqs
+--------------
+
+User
+- id
+- name
+- location (lat, long)
+
+Restaurant
+- id
+- name
+- location (lat, long)
+
+Item
+- id
+- name
+- cost
+- type (HOT / COLD)
+
+Node
+lat
+long
+List<Restaurant>
+
+
+RestaurantRepo
+Node[][] nodes
+Map<Restaurant, Item>
+addNodes(Restaurant)
+addItem(Restaurant, Item)
+- round off lat long
+
+getNearbyNodes(lat, long, radius R)
+

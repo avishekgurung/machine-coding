@@ -1,0 +1,9 @@
+Reqs
+- The system should support gateway mapping
+- The system should support wildcard mapping
+- The routes can be rate limited in future (Quota based)
+
+Solve
+- Construct a trie where one node will store one word. Since the path has multiple words, so one path can be considered
+to be one word in our original trie.
+-

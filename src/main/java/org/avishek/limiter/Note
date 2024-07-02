@@ -1,0 +1,24 @@
+Reqs
+- Rate of one tenant should not affect the other
+- The requests should not get lost while rate limiting
+
+Soln
+
+Tenant
+
+Request
+- id
+- tenant_id
+- execute()
+
+Repo
+Map <Tenant, Queue <Request>>
+Job get(Tenant)
+add(Job)
+
+Cache
+Map<Tenant, Integer> cap
+Map<Tenant, Integer> cur
+
+refresh()
+- reset cur to 0

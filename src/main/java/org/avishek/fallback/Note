@@ -1,0 +1,17 @@
+
+
+
+
+Soln
+
+Tenant
+- name
+- List<Integer> retryInterval
+
+
+Request
+- id
+- tenant
+
+FallbackManager
+- ThreadPool

@@ -1,0 +1,29 @@
+Reqs
+- A tic-tac-toe of size n * m
+- User can move only on empty cells
+- Any horizontal, vertical or diagonal line wins
+
+
+Soln
+
+Cell
+- i
+- j
+- Type (Player1 | Player2 | Vacant
+
+Board
+- m
+- n
+- Cells[m][n]
+
+Direction
+- Left | Right | Top | Bottom
+
+Game
+- Board
+- Player1
+- Player2
+- move(PlayerX, i, j)
+    - validation
+    - game check
+- view

@@ -1,0 +1,50 @@
+Reqs
+- Create user
+- Create group
+- Add user to the group
+- Add expense and split
+- Show group expense and each user expense
+
+
+Soln
+
+User
+- name
+- id
+
+Group
+- id
+- name
+- Map<User, Integer> expense
+- addUser(User)
+- addExpense(User, sum, type - SPLIT_EQUALLY)
+
+
+
+Split (Interface)
+split(Map<User, Integer>)
+
+SplitEqually
+(a,b,c,d)
+a - 100
+b - 200
+
+a - 25, 50 = 75
+b - 25, 50 = 75
+c - 25, 50 = 75
+d - 25, 50 = 75
+
+a = 25
+b = 125
+
+a+b 150
+
+150 divide in the ratio for A:B
+A will be paid 25/25 +125 * (total which others has to pay)
+
+
+View (Interface)
+show()
+
+GroupView
+PersonalView

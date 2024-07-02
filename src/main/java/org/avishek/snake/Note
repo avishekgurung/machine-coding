@@ -1,0 +1,35 @@
+Reqs
+- A food can appear only in one cell at a time
+- A food does not appear in the cell where the snake has occupied
+- A snake increases its size when it eats food
+- A snake dies if its head hit the wall or its body
+
+
+Soln
+
+Cell
+    - i
+    - j
+    - Type (Vacant | Food | Snake)
+    - changeType(Normal | Food)
+
+
+Board
+    - m
+    - n
+    - Map<i+j, Cell>
+    - create every cells
+    - getCell(i,j)
+    - isFoodPresent
+
+ Snake
+    - List<Cell> cells;
+
+
+
+ Game
+    - Board
+    - Snake
+    - move(top | down | left | right) // do the eating as well and dying
+    - addFood() // randomly selects the non snake cells and avoids of the food is already present
+    - view() // show the present state of game

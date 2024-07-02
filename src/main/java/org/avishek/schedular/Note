@@ -1,0 +1,25 @@
+User
+- name
+
+Repo
+UserRepo
+- User: List<Slot> bookedSlots
+
+SlotDate
+hour
+min
+AM
+
+Slot
+-start
+-end
+
+Meet
+- Slot
+- List<User> participants
+- Room
+
+Calendar
+- Meet book(List<User>)
+- viewCalendar(User)
+- viewCalendar(List<Users>)

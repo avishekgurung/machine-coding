@@ -1,0 +1,35 @@
+Reqs
+- A resource (file) can be attached to one or multiple tags.
+- For a given tag, list all the resource
+- For a given resource, get all the tags
+- Identify the top tags
+- Trending tags (We can use LRU cache strategy)
+- Recommend tag
+
+
+Soln
+
+Entity
+-------
+Tag
+- name
+- _id
+
+Resource
+- type
+- name
+- _id
+- List<Tag_id>
+
+Repo
+Map<_id, Tag> tags
+Map<_id, Resource> resources
+Map<tag_id, List<resource_id>>
+Heap<tag_id, count>
+
+
+View
+- List<Resource> search(tag_id)
+- List<Tag> search(resource_id)
+- List<Tag> topTags()
+
